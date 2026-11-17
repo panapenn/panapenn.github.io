@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panagiotis Pennas · IMDEA Software Institute</title>
+  <meta name="description" content="Personal academic page of Panagiotis (Panos) Pennas, Muse Lab, IMDEA Software Institute.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="layout">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+      <img class="avatar" src="assets/profile.svg" alt="Photo of Panagiotis Pennas">
+      <h1 class="name">Panagiotis Pennas</h1>
+      <p class="role">PhD Student<br>Muse Lab · IMDEA Software Institute<br>Madrid, Spain</p>
+
+      <ul class="links">
+        <li><a href="mailto:panagiotis.pennas@imdea.org">Email</a></li>
+        <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="assets/cv.pdf">CV (PDF)</a></li>
+      </ul>
+
+      <nav class="toc" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+      </button>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a PhD student at the <a href="https://software.imdea.org/" target="_blank" rel="noopener">IMDEA Software Institute</a>
+          in Madrid, where I work in the <strong>Muse Lab</strong> under the supervision of
+          <a href="https://thaleia-dimitradoudali.github.io/" target="_blank" rel="noopener">Prof. Thaleia Dimitra Doudali</a>.
+          My research sits at the intersection of <strong>machine learning</strong> and <strong>operating systems</strong>.
+        </p>
+        <p>
+          <!-- EDIT: Background — previous degrees, universities, industry experience. -->
+          Before joining IMDEA, I received my Diploma/MSc in [Field] from [University]. I am interested in
+          [topic one], [topic two] and [topic three].
+        </p>
+        <div class="tags">
+          <span>Systems for ML</span><span>ML for Systems</span><span>Operating Systems</span><span>Memory Management</span>
+        </div>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li><time>Nov 2026</time><span>Launched this website.</span></li>
+          <li><time>Mmm 2026</time><span>Our paper “[Title]” was accepted at <em>[Venue]</em>.</span></li>
+          <li><time>Mmm 2026</time><span>Presented a poster at <em>[Workshop / Conference]</em>.</span></li>
+          <li><time>Mmm 2025</time><span>Joined the Muse Lab at IMDEA Software Institute as a PhD student.</span></li>
+        </ul>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Systems for Machine Learning</h3>
+            <p>[One or two sentences on how you make ML workloads run faster or more efficiently — e.g., memory, scheduling, data movement.]</p>
+          </article>
+          <article class="card">
+            <h3>Machine Learning for Systems</h3>
+            <p>[One or two sentences on using learned models inside the OS or runtime — e.g., predicting access patterns to guide resource management.]</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="muted">See also <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+        <h3 class="year">2026</h3>
+        <article class="pub">
+          <span class="venue">VENUE '26</span>
+          <div>
+            <p class="pub-title">Title of Your Paper Goes Here</p>
+            <p class="pub-authors"><strong>Panagiotis Pennas</strong>, Co-Author, Thaleia Dimitra Doudali</p>
+            <p class="pub-where">Proceedings of [Conference], City, Country, 2026.</p>
+            <p class="pub-links"><a href="#">PDF</a><a href="#">arXiv</a><a href="#">Code</a><a href="#">Slides</a></p>
+          </div>
+        </article>
+
+        <h3 class="year">2025</h3>
+        <article class="pub">
+          <span class="venue">WKSHP '25</span>
+          <div>
+            <p class="pub-title">Title of a Workshop Paper or Poster</p>
+            <p class="pub-authors"><strong>Panagiotis Pennas</strong>, Thaleia Dimitra Doudali</p>
+            <p class="pub-where">[Workshop] co-located with [Conference], 2025.</p>
+            <p class="pub-links"><a href="#">PDF</a><a href="#">Poster</a></p>
+          </div>
+        </article>
+      </section>
+
+      <section id="talks">
+        <h2>Talks</h2>
+        <ul class="list">
+          <li><strong>“[Talk title]”</strong> — [Event / Host institution], City, Mmm 2026. <a href="#">Slides</a></li>
+          <li><strong>“[Talk title]”</strong> — IMDEA Software Institute seminar, Madrid, Mmm 2025.</li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul class="list">
+          <li><strong>Teaching Assistant</strong>, [Course name], [University], [Term Year].</li>
+          <li><strong>Tutorial</strong>, [Tutorial name] at [Conference], [Year].</li>
+        </ul>
+      </section>
+
+      <section id="service">
+        <h2>Service</h2>
+        <ul class="list">
+          <li><strong>Artifact Evaluation Committee</strong>: [Conference] [Year].</li>
+          <li><strong>Student volunteer</strong>: [Conference] [Year].</li>
+          <li><strong>Sub-reviewer</strong>: [Conference / Journal] [Year].</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© <span id="year">2026</span> Panagiotis Pennas · Last updated November 2026</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
