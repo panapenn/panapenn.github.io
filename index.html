@@ -3,152 +3,218 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Panagiotis Georgios Pennas · IMDEA Software Institute</title>
-  <meta name="description" content="Personal academic page of Panagiotis (Panos) Pennas, Muse Lab, IMDEA Software Institute.">
+  <title>Panagiotis G. Pennas</title>
+  <meta name="description" content="Panagiotis Georgios Pennas: PhD researcher at IMDEA Software Institute working on the security of LLM serving systems.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css">
   <link rel="stylesheet" href="style.css">
   <script>
-    // Apply saved theme before paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
 </head>
 <body>
-  <div class="layout">
 
-    <!-- ================= SIDEBAR ================= -->
-    <aside class="sidebar">
-      <img class="avatar" src="assets/profile.png" alt="Photo of Panagiotis Pennas">
-      <h1 class="name">Panagiotis Pennas</h1>
-      <p class="role">PhD Student<br>Muse Lab · IMDEA Software Institute<br>Madrid, Spain</p>
-
-      <ul class="links">
-        <li><a href="mailto:panagiotis.pennas@imdea.org">Email</a></li>
-        <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
-        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a></li>
-        <li><a href="assets/cv.pdf">CV (PDF)</a></li>
-      </ul>
-
-      <nav class="toc" aria-label="Sections">
-        <a href="#about">About</a>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#about">Panagiotis G. Pennas</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#about">Home</a>
         <a href="#news">News</a>
-        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#talks">Talks</a>
+        <a href="#awards">Awards &amp; Talks</a>
+        <a href="#experience">Experience</a>
         <a href="#teaching">Teaching</a>
-        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/cv.pdf" class="no-spy">CV</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
 
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
-      </button>
-    </aside>
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div class="profile">
+        <img class="avatar" src="assets/profile.png" alt="Photo of Panagiotis G. Pennas" style="width:250px; height:250px;">
+        <h2 class="portrait-name">Panagiotis G. Pennas</h2>
+        <p class="portrait-role">PhD Researcher</p>
+        <p class="portrait-org"><a href="https://software.imdea.org/" target="_blank" rel="noopener">IMDEA Software Institute</a></p>
+        <ul class="social">
+          <li><a href="mailto:panagiotispennas@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="https://scholar.google.com/citations?user=gP-5CSsAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+          <li><a href="https://github.com/panapenn" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/panagiotis-pennas-3248a41b5" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="assets/cv.pdf" aria-label="CV"><i class="ai ai-cv"></i></a></li>
+        </ul>
+      </div>
 
-    <!-- ================= MAIN ================= -->
-    <main>
-
-      <section id="about">
-        <h2>About</h2>
+      <div class="bio">
+        <h1>Biography</h1>
         <p>
-          I am a PhD student at the <a href="https://software.imdea.org/" target="_blank" rel="noopener">IMDEA Software Institute</a>
-          in Madrid, where I work in the <strong>Muse Lab</strong> under the supervision of
-          <a href="https://thaleia-dimitradoudali.github.io/" target="_blank" rel="noopener">Prof. Thaleia Dimitra Doudali</a>.
-          My research sits at the intersection of <strong>machine learning</strong> and <strong>operating systems</strong>.
+          I am a PhD researcher at the <a href="https://software.imdea.org/" target="_blank" rel="noopener">IMDEA Software Institute</a>
+          and Universidad Politécnica de Madrid, advised by
+          <a href="https://thaleia-dimitradoudali.github.io/" target="_blank" rel="noopener">Thaleia Dimitra Doudali</a> and
+          <a href="https://mguarnieri.github.io/" target="_blank" rel="noopener">Marco Guarnieri</a>.
         </p>
         <p>
-          <!-- EDIT: Background — previous degrees, universities, industry experience. -->
-          Before joining IMDEA, I received my Diploma/MSc in [Field] from [University]. I am interested in
-          [topic one], [topic two] and [topic three].
+          My research focuses on the security of Machine Learning Serving Systems. I study how performance
+          optimizations in multi-tenant LLM serving, such as prefix caching and request batching, leak information
+          between users, and how to build defenses that close these leaks without giving up efficiency.
         </p>
-        <div class="tags">
-          <span>Systems for ML</span><span>ML for Systems</span><span>Operating Systems</span><span>Memory Management</span>
+
+        <div class="two-col">
+          <div>
+            <h3>Interests</h3>
+            <ul class="interests">
+              <li>LLM Serving Systems</li>
+              <li>Side Channels</li>
+              <li>Machine Learning Security</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <ul class="edu">
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <div><p class="course">PhD in Software, Systems and Computing, 2025–present</p>
+                <p class="institution">IMDEA Software Institute – UPM</p></div>
+              </li>
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <div><p class="course">MSc in Data Science, 2024</p>
+                <p class="institution">Uppsala University</p></div>
+              </li>
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <div><p class="course">Diploma in Electrical &amp; Computer Engineering, 2022</p>
+                <p class="institution">Aristotle University of Thessaloniki</p></div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="news">
-        <h2>News</h2>
+  <!-- ================= NEWS ================= -->
+  <section id="news" class="section alt">
+    <div class="container split">
+      <div class="section-heading"><h1>News</h1></div>
+      <div class="section-body">
         <ul class="news">
-          <li><time>Nov 2026</time><span>Launched this website.</span></li>
-          <li><time>Mmm 2026</time><span>Our paper “[Title]” was accepted at <em>[Venue]</em>.</span></li>
-          <li><time>Mmm 2026</time><span>Presented a poster at <em>[Workshop / Conference]</em>.</span></li>
-          <li><time>Mmm 2025</time><span>Joined the Muse Lab at IMDEA Software Institute as a PhD student.</span></li>
+          <li>2026 - Our paper on preventing prefix caching side channels in multi-tenant LLM serving systems has been accepted at Middleware 2026!</li>
+          <li>2026 - Presented a poster at SOSP 2026</li>
+          <li>2026 - Gave a talk at the EuroSys Doctoral Workshop (EuroDW 2026)</li>
+          <li>2026 - Won 2nd place in the IMDEA Software Annual Poster Competition and the Audience Choice Award for Best Lightning Talk</li>
+          <li>2025/10 - Started my PhD at the IMDEA Software Institute</li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="research">
-        <h2>Research</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Systems for Machine Learning</h3>
-            <p>[One or two sentences on how you make ML workloads run faster or more efficiently — e.g., memory, scheduling, data movement.]</p>
-          </article>
-          <article class="card">
-            <h3>Machine Learning for Systems</h3>
-            <p>[One or two sentences on using learned models inside the OS or runtime — e.g., predicting access patterns to guide resource management.]</p>
-          </article>
+  <!-- ================= PUBLICATIONS ================= -->
+  <section id="publications" class="section">
+    <div class="container split">
+      <div class="section-heading"><h1>Publications</h1></div>
+      <div class="section-body">
+
+        <div class="pub">
+          <i class="far fa-file-alt pub-icon"></i>
+          <div>
+            <span class="authors"><span class="me">Panagiotis G. Pennas</span>, Konstantinos Papaioannou, Marco Guarnieri, Thaleia Dimitra Doudali</span>
+            (2026). <span class="pub-title">CacheSolidarity: Preventing Prefix Caching Side Channels in Multi-tenant LLM Serving Systems</span>.
+            In Proceedings of the 27th International Middleware Conference (Middleware ’26), December 14–18, 2026, Tarragona, Spain.
+            <p class="buttons">
+              <a class="btn" href="https://doi.org/10.1145/3801927.3858638" target="_blank" rel="noopener"><i class="fas fa-download"></i> ACM</a>
+              <a class="btn" href="https://arxiv.org/abs/2603.10726" target="_blank" rel="noopener"><i class="fas fa-download"></i> arXiv</a>
+              <a class="btn" href="https://github.com/muse-research-lab/CacheSolidarity" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+            </p>
+            <p class="badges">
+              <span>ACM Artifact Evaluation:</span>
+              <a href="assets/acm_available_1.1.png" target="_blank"><img src="assets/acm_available_1.1.png" alt="Artifacts Available" title="Artifacts Available"></a>
+              <a href="assets/acm_functional_1.1.png" target="_blank"><img src="assets/acm_functional_1.1.png" alt="Artifacts Evaluated – Functional" title="Artifacts Evaluated – Functional"></a>
+              <a href="assets/acm_reproduced_1.1.png" target="_blank"><img src="assets/acm_reproduced_1.1.png" alt="Results Reproduced" title="Results Reproduced"></a>
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="publications">
-        <h2>Publications</h2>
-        <p class="muted">See also <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>.</p>
-
-        <h3 class="year">2026</h3>
-        <article class="pub">
-          <span class="venue">VENUE '26</span>
-          <div>
-            <p class="pub-title">Title of Your Paper Goes Here</p>
-            <p class="pub-authors"><strong>Panagiotis Pennas</strong>, Co-Author, Thaleia Dimitra Doudali</p>
-            <p class="pub-where">Proceedings of [Conference], City, Country, 2026.</p>
-            <p class="pub-links"><a href="#">PDF</a><a href="#">arXiv</a><a href="#">Code</a><a href="#">Slides</a></p>
-          </div>
-        </article>
-
-        <h3 class="year">2025</h3>
-        <article class="pub">
-          <span class="venue">WKSHP '25</span>
-          <div>
-            <p class="pub-title">Title of a Workshop Paper or Poster</p>
-            <p class="pub-authors"><strong>Panagiotis Pennas</strong>, Thaleia Dimitra Doudali</p>
-            <p class="pub-where">[Workshop] co-located with [Conference], 2025.</p>
-            <p class="pub-links"><a href="#">PDF</a><a href="#">Poster</a></p>
-          </div>
-        </article>
-      </section>
-
-      <section id="talks">
-        <h2>Talks</h2>
-        <ul class="list">
-          <li><strong>“[Talk title]”</strong> — [Event / Host institution], City, Mmm 2026. <a href="#">Slides</a></li>
-          <li><strong>“[Talk title]”</strong> — IMDEA Software Institute seminar, Madrid, Mmm 2025.</li>
+  <!-- ================= AWARDS & TALKS ================= -->
+  <section id="awards" class="section alt">
+    <div class="container split">
+      <div class="section-heading"><h1>Awards &amp; Talks</h1></div>
+      <div class="section-body">
+        <ul class="news">
+          <li>2026 - 2nd place, Annual Poster Competition, IMDEA Software Institute</li>
+          <li>2026 - Audience Choice Award, Best Lightning Talk, IMDEA Software Institute</li>
+          <li>2026 - Poster, ACM Symposium on Operating Systems Principles (SOSP 2026)</li>
+          <li>2026 - Talk, EuroSys Doctoral Workshop (EuroDW 2026)</li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="teaching">
-        <h2>Teaching</h2>
-        <ul class="list">
-          <li><strong>Teaching Assistant</strong>, [Course name], [University], [Term Year].</li>
-          <li><strong>Tutorial</strong>, [Tutorial name] at [Conference], [Year].</li>
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section">
+    <div class="container split">
+      <div class="section-heading"><h1>Experience</h1></div>
+      <div class="section-body">
+        <div class="exp">
+          <p class="exp-title">Researcher &amp; Developer</p>
+          <p class="exp-meta">Ericsson R&amp;D · Stockholm, Sweden · 2024</p>
+          <p>MSc thesis on securing LLMs against membership inference attacks; improved an in-house prototype for AI hyperparameter optimization.</p>
+        </div>
+        <div class="exp">
+          <p class="exp-title">Research Intern</p>
+          <p class="exp-meta">CERTH – Centre for Research &amp; Technology Hellas · Thessaloniki, Greece · 2022</p>
+          <p>Optimization techniques for recommender systems.</p>
+        </div>
+        <div class="exp">
+          <p class="exp-title">F1/tenth Autonomous Racing</p>
+          <p class="exp-meta">Aristotle University of Thessaloniki · 2021–2022</p>
+          <p>Real-time path planning for autonomous racing in ROS/Gazebo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEACHING ================= -->
+  <section id="teaching" class="section alt">
+    <div class="container split">
+      <div class="section-heading"><h1>Teaching</h1></div>
+      <div class="section-body">
+        <ul class="news">
+          <li>2023 - Teaching Assistant, Introduction to Computer Control Systems, Uppsala University</li>
+          <li>2022 - Teaching Assistant, Database Design I and Automatic Control II, Uppsala University</li>
+          <li>2021–2022 - Teaching Assistant, Concurrency and Security in Software, Aristotle University of Thessaloniki</li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="service">
-        <h2>Service</h2>
-        <ul class="list">
-          <li><strong>Artifact Evaluation Committee</strong>: [Conference] [Year].</li>
-          <li><strong>Student volunteer</strong>: [Conference] [Year].</li>
-          <li><strong>Sub-reviewer</strong>: [Conference / Journal] [Year].</li>
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="container split">
+      <div class="section-heading"><h1>Contact</h1></div>
+      <div class="section-body">
+        <ul class="contact">
+          <li><i class="fas fa-envelope"></i><a href="mailto:panagiotispennas@gmail.com">panagiotispennas@gmail.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i><span>IMDEA Software Institute, Campus Montegancedo UPM s/n, Pozuelo de Alarcón, Madrid 28223</span></li>
         </ul>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <footer>
-        <p>© <span id="year">2026</span> Panagiotis Pennas · Last updated November 2026</p>
-      </footer>
-    </main>
-  </div>
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Panagiotis G. Pennas</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
